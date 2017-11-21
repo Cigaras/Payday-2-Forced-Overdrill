@@ -1,0 +1,28 @@
+{
+	"name": "Forced Overdrill",
+	"description": "allows to activate Overdrill mode in First World Bank with a key bind instead of positioning 4 players around the vault",
+	"author": "Valdas V.",
+	"version": "1.0",
+	"blt_version": 2,
+	"image" : "logo.png",
+	"dependencies": [
+		"ANCR"
+	],
+	"hooks": [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "lua/menumanager.lua"
+		}
+	],
+	"keybinds": [
+		{
+			"keybind_id": "Overdrill",
+			"name": "Overdrill",
+			"description": "Allows the Overdrill to be placed",
+			"script_path": "lua/overdrill.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+	]
+}
